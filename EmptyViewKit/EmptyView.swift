@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 open class EmptyView: UIView {
 
@@ -23,14 +24,16 @@ open class EmptyView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupViews() {
+    private func setupViews() {
         
         addSubview(titleLabel)
+        
+        titleLabel.snp.makeConstraints { (make) in
+            make.edges.equalTo(UIEdgeInsets.zero)
+        }
     }
     
-    open override func layoutSubviews() {
-        super.layoutSubviews()
-        titleLabel.frame = CGRect.init(x: 0, y: 0, width: 100, height: 44)
-        titleLabel.center = self.center
+    func testRed() {
+        titleLabel.text = "Red"
     }
 }
