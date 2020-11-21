@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EEEDD4A12569158F00489DA5 /* EmptyViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EEEDD49F2569158F00489DA5 /* EmptyViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEEDD4A9256915AC00489DA5 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEDD4A8256915AC00489DA5 /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEEDD49C2569158F00489DA5 /* EmptyViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmptyViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEDD49F2569158F00489DA5 /* EmptyViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyViewKit.h; sourceTree = "<group>"; };
 		EEEDD4A02569158F00489DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEDD4A8256915AC00489DA5 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				EEEDD49F2569158F00489DA5 /* EmptyViewKit.h */,
+				EEEDD4A8256915AC00489DA5 /* EmptyView.swift */,
 				EEEDD4A02569158F00489DA5 /* Info.plist */,
 			);
 			path = EmptyViewKit;
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					EEEDD49B2569158F00489DA5 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEDD4A9256915AC00489DA5 /* EmptyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		EEEDD4A52569158F00489DA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mx.EmptyViewKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		EEEDD4A62569158F00489DA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
