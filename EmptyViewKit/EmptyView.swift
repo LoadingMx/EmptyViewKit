@@ -33,7 +33,7 @@ open class EmptyView: UIView {
         }
     }
     
-    func testRed() {
+    open func testRed() {
         titleLabel.text = "Red"
     }
 }
